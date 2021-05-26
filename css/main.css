@@ -5,6 +5,11 @@
   --accent: #EA671F;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: var(--white);
   margin: 0;
@@ -12,7 +17,36 @@ body {
 }
 
 .container {
+  position: relative;
   height: 100vh;
+}
+
+.container .homeLogo {
+  position: absolute;
+  z-index: 2;
+  width: 56vw;
+  left: 22vw;
+  height: 16vh;
+  top: 42vh;
+}
+
+.container .homeLogo img {
+  height: 100%;
+  width: 100%;
+}
+
+.container .homeLogo .desktopLogo {
+  display: none;
+}
+
+.container .homeLogo a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  cursor: pointer;
 }
 
 .container .split {
@@ -30,6 +64,17 @@ body {
   transition: 800ms;
   -webkit-transition-property: background-color;
   transition-property: background-color;
+  cursor: pointer;
+  position: relative;
+}
+
+.container .split a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 .container .split img {
@@ -38,6 +83,10 @@ body {
 
 .container .split:hover {
   background-color: var(--dark);
+}
+
+.container a.split {
+  display: block;
 }
 
 .container .leftArea {
@@ -53,6 +102,22 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .container .homeLogo {
+    position: absolute;
+    z-index: 2;
+    width: 8vw;
+    left: 46vw;
+    height: 36vh;
+    top: 32vh;
+  }
+  .container .homeLogo .desktopLogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .homeLogo .mobileLogo {
+    display: none;
   }
   .container .split {
     height: 100vh;
