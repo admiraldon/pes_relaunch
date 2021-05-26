@@ -1,0 +1,47 @@
+:root {
+    --white: #fff;
+    --light: #f1f1f1;
+    --dark: #999999;
+    --accent: #EA671F;
+}
+
+body {
+    background-color: var(--white);
+    margin:0;
+    padding:0;
+}
+
+.container {
+    
+    height: 100vh;
+
+    .split {
+        height:50vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 80vw;
+        }
+    }
+
+    .leftArea {
+        background-color: var(--light);
+    }
+    .rightArea {
+        background-color: var(--white);
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .container {
+        display: flex;
+        
+        .split {
+            height: 100vh;
+            width: 50%;
+        }
+    }
+    
+}
