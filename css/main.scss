@@ -18,7 +18,6 @@ body {
 
 
 .container {
-    
     position: relative;
     height: 100vh;
 
@@ -30,7 +29,6 @@ body {
         height:16vh;
         top: 42vh;
         
-
         img {
             height: 100%;
             width: 100%;
@@ -52,7 +50,7 @@ body {
     }
 
     .split {
-        height:50vh;
+        height:50%;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -60,6 +58,10 @@ body {
         transition-property: background-color;
         cursor:pointer;
         position: relative;
+
+        &:hover {
+            background-color: var(--dark);
+        }
 
         a {
             position: absolute;
@@ -73,22 +75,81 @@ body {
         img {
             max-width: 80vw;
         }
-
-        &:hover {
-            background-color: var(--dark);
-        }
     }
 
     a.split {
         display:block;
     }
 
+
     .leftArea {
         background-color: var(--light);
+
+        .productionEntry{
+            display: none;
+        }
+
+        &:hover {
+            .productionEntry{
+                display: inline-flex;
+            }
+            .designEntry{
+                display: none;
+            }
+        }
+
     }
     .rightArea {
         background-color: var(--white);
     }
+
+    .rightArea2 {
+        display: flex;
+        
+        .webEntry {
+            background-color: var(--light);
+        }
+        .photoEntry {
+            background-color: var(--accent);
+        }
+
+        .split2 {
+            width: 50%;
+            height: 50vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        // .split2 {
+
+
+        //     // transition: 800ms;
+        //     // transition-property: background-color;
+        //     // cursor:pointer;
+        //     // position: relative;
+    
+        //     // &:hover {
+        //     //     background-color: var(--dark);
+        //     // }
+    
+        //     // a {
+        //     //     position: absolute;
+        //     //     width: 100%;
+        //     //     height: 100%;
+        //     //     z-index: 1;
+        //     //     top:0;
+        //     //     left:0;
+        //     // }
+    
+        //     // img {
+        //     //     max-width: 80vw;
+        //     // }
+        // }
+    }
+
+
 }
 
 @media screen and (min-width: 767px) {

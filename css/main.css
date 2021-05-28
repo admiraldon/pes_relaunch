@@ -50,7 +50,7 @@ body {
 }
 
 .container .split {
-  height: 50vh;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,6 +68,10 @@ body {
   position: relative;
 }
 
+.container .split:hover {
+  background-color: var(--dark);
+}
+
 .container .split a {
   position: absolute;
   width: 100%;
@@ -81,10 +85,6 @@ body {
   max-width: 80vw;
 }
 
-.container .split:hover {
-  background-color: var(--dark);
-}
-
 .container a.split {
   display: block;
 }
@@ -93,8 +93,50 @@ body {
   background-color: var(--light);
 }
 
+.container .leftArea .productionEntry {
+  display: none;
+}
+
+.container .leftArea:hover .productionEntry {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.container .leftArea:hover .designEntry {
+  display: none;
+}
+
 .container .rightArea {
   background-color: var(--white);
+}
+
+.container .rightArea2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .rightArea2 .webEntry {
+  background-color: var(--light);
+}
+
+.container .rightArea2 .photoEntry {
+  background-color: var(--accent);
+}
+
+.container .rightArea2 .split2 {
+  width: 50%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 767px) {
