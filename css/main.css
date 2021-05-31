@@ -118,11 +118,11 @@ body {
 }
 
 .container .rightArea2 .webEntry {
-  background-color: var(--light);
+  background-color: var(--white);
 }
 
 .container .rightArea2 .photoEntry {
-  background-color: var(--accent);
+  background-color: var(--white);
 }
 
 .container .rightArea2 .split2 {
@@ -137,6 +137,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  cursor: pointer;
+  position: relative;
+}
+
+.container .rightArea2 .split2:hover {
+  background-color: var(--dark);
 }
 
 @media screen and (min-width: 767px) {
@@ -164,6 +174,13 @@ body {
   .container .split {
     height: 100vh;
     width: 50%;
+  }
+  .container .rightArea2 {
+    display: -ms-grid;
+    display: grid;
+  }
+  .container .rightArea2 .split2 {
+    width: 50vw;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -107,10 +107,10 @@ body {
         display: flex;
         
         .webEntry {
-            background-color: var(--light);
+            background-color: var(--white);
         }
         .photoEntry {
-            background-color: var(--accent);
+            background-color: var(--white);
         }
 
         .split2 {
@@ -119,34 +119,15 @@ body {
             display:flex;
             justify-content: center;
             align-items: center;
-            
-            
+            transition: 800ms;
+            transition-property: background-color;
+            cursor:pointer;
+            position: relative;
+    
+            &:hover {
+                background-color: var(--dark);
+            }
         }
-        // .split2 {
-
-
-        //     // transition: 800ms;
-        //     // transition-property: background-color;
-        //     // cursor:pointer;
-        //     // position: relative;
-    
-        //     // &:hover {
-        //     //     background-color: var(--dark);
-        //     // }
-    
-        //     // a {
-        //     //     position: absolute;
-        //     //     width: 100%;
-        //     //     height: 100%;
-        //     //     z-index: 1;
-        //     //     top:0;
-        //     //     left:0;
-        //     // }
-    
-        //     // img {
-        //     //     max-width: 80vw;
-        //     // }
-        // }
     }
 
 
@@ -177,6 +158,15 @@ body {
             height: 100vh;
             width: 50%;
         }
+
+        .rightArea2 {
+            display: grid;
+
+            .split2 {
+                width: 50vw;
+                
+            }
+        }    
     }
     
 }
