@@ -9,7 +9,8 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-    <div id="dot"></div>
+    <!-- <div id="ring"></div> -->
+    <!-- <div id="dot"></div> -->
     <div class="container"> 
         <div class="homeLogo">
           <img class="mobileLogo"src="images/logo_h.svg" alt="home logo">
@@ -28,14 +29,6 @@
         </div>
     </div> <!--  end of container -->
 
-    <script>
-
-        const dot = document.getElementById('dot')
-
-        document.addEventListener('mousemove', (event) => {
-            dot.style.top = (event.clientY - 12)+ "px";
-            dot.style.left = (event.clientX - 12 ) + "px";
-        })
-    </script>       
+  
 </body>
 </html>
