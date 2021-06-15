@@ -108,7 +108,7 @@ body {
       position: absolute;
       width: 100%;
       height: 100%;
-      z-index: 1;
+      z-index: 5;
       top: 0;
       left: 0;
     }
@@ -118,7 +118,8 @@ body {
     }
   }
 
-  a.split {
+  a.split,
+  a.split2 {
     display: block;
   }
 
@@ -194,7 +195,7 @@ body {
 
     li {
       list-style: none;
-      font-size: 3vw;
+      font-size: 4vw;
       text-align: end;
       position: relative;
 
@@ -228,10 +229,11 @@ body {
 
     text-transform: uppercase;
     text-align: right;
-    font-size: 3.5vw;
+    font-size: 6vw;
   }
 
   p {
+    display: none;
     position: relative;
 
     &::after {
@@ -303,7 +305,7 @@ header {
 
 /*responsiv tablet wide screen */
 
-@media screen and (min-width: 76px) {
+@media screen and (min-width: 767px) {
   /*home*/
 
   .container {
